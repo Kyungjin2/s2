@@ -24,6 +24,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /**
+         * 이 함수는 액티비티가 실행될때 호출되는 함수 입니다.
+         * 인텐트를 DeloyedMessageService 객체로 넘겨줍니다.
+         * @param view 뷰 클래스의 객체를 인자로 넘겨받습니다.
+         * @return void 타입 입니다.
+         * @warning 주의사항 없습니다.
+         * @see DeloyedMessageService
+         *
+         *
+         */
+
+
+
+
+
+
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.READ_CALL_LOG},MODE_PRIVATE);
         btnCall = (Button) findViewById(R.id.btnCall);
